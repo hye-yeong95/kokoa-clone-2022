@@ -1,13 +1,51 @@
 .nav {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
     background-color: #f9f9fa;
-    padding: 20px 40px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    /* (200px에 50px padding을 주면 250px로 나타나게 하는 것 그것을 막기 위해 
+    box-sizing을 사용하면 전체값을 200px로 나타나게 함 ) */
+    border-top: 1px solid rgb(121, 121, 121, 0.3);
 }
-
-
-
 
 .nav__list {
     display: flex;
     justify-content: space-between;
-
 }
+
+.nav__link {
+    position: relative;
+    color: #2e363e;
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.nav__dot {
+    background-color: none
+    width:25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+    font-weight: 600;
+    position: absolute;
+    left:30px;
+    bottom: 25px;
+}
+/* (.nav__dot 사이즈 더 크게 만들기) */
