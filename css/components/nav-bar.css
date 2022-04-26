@@ -27,7 +27,7 @@
 }
 
 .nav__dot {
-    background-color: none
+    background-color: none;
     width:25px;
     height: 25px;
     display: flex;
@@ -38,5 +38,5 @@
     position: absolute;
     left:30px;
     bottom: 25px;
+    font-size: xx-large;
 }
-/* (.nav__dot 사이즈 더 크게 만들기) */
